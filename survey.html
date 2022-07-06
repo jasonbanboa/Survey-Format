@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Free Servey Format</title>
+    <link rel="stylesheet" href="/survey/survey.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Free Servey Format</h1>
+    <p id="description"><em>thank you for your time</em></p>
+    <form id="survey-form">
+      <fieldset class="basic-info">
+        <label id="name-label">Name <input id="name" type="text" placeholder="Please enter your full name" required></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Please enter your email" required></label>
+        <label id="number-label">Age(optional) <input id="number" type="number" min="12" max="120" placeholder="Age"></label>
+      </fieldset>
+      <fieldset class="current-role">
+        <label>Which option best describes your current role? 
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Teacher</option>
+            <option value="3">Full time worker</option>
+            <option value="4">Other</option>\
+            <option value="5">I'd rather not say</option>
+          </select>
+        <label>
+      </fieldset>
+      <fieldset class="recommendation">
+        <label>Would you recommend this website to a friend?
+          <label class="pointer"><input class="inline" value="yes" name="recommend-us" type="radio"> Yes, absolutely</label>
+          <label class="pointer"><input class="inline" value="maybe" name="recommend-us" type="radio"> Maybe, Im not sure</label>
+          <label class="pointer"><input  class="inline" value="no" name="recommend-us" type="radio"> No, probably not</label>
+        </label>
+      </fieldset>
+      <fieldset class="improvements">
+        <label>What feature would you like us to improve (Check all that apply)
+          <label class="pointer"><input class="inline" type="checkbox" value="user-inteface"> User Interface</label>
+          <label class="pointer"><input class="inline" type="checkbox" value="loading-time"> Loading time</label>
+          <label class="pointer"><input class="inline" type="checkbox" value="main-menu"> Main menu</label>
+          <label class="pointer"><input class="inline" type="checkbox" value="user-help"> User help</label>
+          <label class="pointer"><input class="inline" type="checkbox" value="forums"> Forums</label>
+        </label>
+      </fieldset>
+      <fieldset class="text">
+        <label> Any suggestions, comments, or requests
+          <textarea rows="5" cols="50" placeholder="Enter here"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit">
+    </form>
+  </body>
+</html>
